@@ -26,7 +26,7 @@ Each column should be sortable (ascending or descending, either numerically or a
 
 #### Pagination
 
-As there are over 1,200 Pokemon, pagination should be implemented for the list view. The PokeAPI does provide paginated responses by default, with parameters to tweak as needed.
+As there are over 1,200 Pokemon, pagination should be implemented for the list view. The PokeAPI does [provide paginated responses by default, with parameters to tweak as needed.](https://pokeapi.co/docs/v2#resource-listspagination-section)
 
 ### 2. Pokemon Details
 
@@ -73,7 +73,7 @@ Filters should be also implemented on the list view (presumably alongside search
 - Type
 - Weight
 - Height
-- Generation
+- [Generation](https://bulbapedia.bulbagarden.net/wiki/Generation)
 
 ### Pokemon Team Reorder
 
@@ -81,16 +81,16 @@ A user should be able to re-order pokemon in their team using a drag-and-drop in
 
 ## Tech Stack
 
-Revolve Labs primarily uses Vue.js 3 for front-end web applications, and a boilerplate application has been provided along with this document. Inside, you’ll find the official Vue.js boilerplate “Quick Start” application, along with:
+Revolve Labs primarily uses Vue.js 3 for front-end web applications, and a boilerplate application has been provided along with this document. Inside, you’ll find the official Vue.js boilerplate “[Quick Start](https://vuejs.org/guide/quick-start)” application, along with:
 
-- Vue Router, Vue.js 3’s official router.
-- Pinia, a store library for Vue.js 3.
-- VueUse, a utility library for Vue.js 3.
-- Vitest for unit tests.
-- Playwright for e2e tests.
-- Element Plus, a UI component library for Vue.js 3.
+- [Vue Router](https://router.vuejs.org/), Vue.js 3’s official router.
+- [Pinia](https://pinia.vuejs.org/), a store library for Vue.js 3.
+- [VueUse](https://vueuse.org/), a utility library for Vue.js 3.
+- [Vitest](https://vitest.dev/) for unit tests.
+- [Playwright](https://playwright.dev/) for e2e tests.
+- [Element Plus](https://element-plus.org/en-US/), a UI component library for Vue.js 3.
   - This is pre-configured to allow you to focus on application logic–we use E+ here at RL. If you want to use a different component library (or roll-your-own), that’s fine too–just be aware this will extend the scope of the challenge.
-- A custom font, “Pokemon DP Pro”, which is reminiscent of the original font from Pokemon Diamond/Pearl/Platinum Versions for the Nintendo DS.
+- A custom font, “[Pokemon DP Pro](https://fontstruct.com/fontstructions/show/404271/pok_mon_dp_pro)”, which is reminiscent of the original font from Pokemon Diamond/Pearl/Platinum Versions for the Nintendo DS.
 
 You are allowed to use as many libraries, custom components, and as much custom CSS as necessary–Tailwind CSS is also installed for your convenience. However, it’s understandable and acceptable if you want to use scoped styles, CSS-in-JS, or similar (which may be necessary due to limitations with Element Plus).
 
