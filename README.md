@@ -66,7 +66,7 @@ Please note: the layout should be mobile-responsive. You can’t replace a porta
 
 ![Details View](meta/img/details.png)
 
-### My Team View
+### My Team View (Bottom Half)
 
 ![List View](meta/img/team.png)
 
