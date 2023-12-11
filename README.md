@@ -1,26 +1,26 @@
-# Vue.js 3 Coding Challenge #1: Pokedex
+# Vue.js 3 Coding Challenge #1: Pokédex
 
-_A Vue.js 3-driven Pokedex for the web!_
+_A Vue.js 3-driven Pokédex for the web!_
 
 ## Overview
 
-Oak (your part-time project manager) has tasked you with building a proof-of-concept user interface for an upcoming web application to replace the original physical [Pokedex family of devices](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex).
+Oak (your part-time project manager) has tasked you with building a proof-of-concept user interface for an upcoming web application to replace the original physical [Pokédex family of devices](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex).
 
-With the prevalence of smartphones in the current year, no one wants to carry around hand-held devices for the sole purpose of cataloging Pokemon. Your task is to build a web-based example application to replicate some of the functionality of the original hand-held devices.
+With the prevalence of smartphones in the current year, no one wants to carry around hand-held devices for the sole purpose of cataloging Pokémon. Your task is to build a web-based example application to replicate some of the functionality of the original hand-held devices.
 
 ## Requirements
 
 The data source should be <https://pokeapi.co/>, a free and open source read-only REST API that provides all of the data needed to complete this challenge. No authentication/authorization required!
 
-### 1. Pokemon List
+### 1. Pokémon List
 
-As a user, I want to be able to view a list of Pokemon. The list of Pokemon should at least contain:
+As a user, I want to be able to view a list of Pokémon. The list of Pokémon should at least contain:
 
-- Pokedex Number (ID)
+- Pokédex Number (ID)
 - Name
 - Type(s)
 
-Each item in the list should contain a set of action buttons, one to “view” (which allows the user to view a Pokemon’s details–this can be in the same view or another) and one to “add to team” (which allows the user to add a Pokemon to their team–a user shouldn’t be able to add more than six total–but duplicates are allowed–see “3. My Team” for more details).
+Each item in the list should contain a set of action buttons, one to “view” (which allows the user to view a Pokémon’s details–this can be in the same view or another) and one to “add to team” (which allows the user to add a Pokémon to their team–a user shouldn’t be able to add more than six total–but duplicates are allowed–see “3. My Team” for more details).
 
 #### Sort
 
@@ -28,33 +28,33 @@ Each column should be sortable (ascending or descending, either numerically or a
 
 #### Pagination
 
-As there are over 1,200 Pokemon, pagination should be implemented for the list view. The PokeAPI does [provide paginated responses by default, with parameters to tweak as needed.](https://pokeapi.co/docs/v2#resource-listspagination-section)
+As there are over 1,200 Pokémon, pagination should be implemented for the list view. The PokéAPI does [provide paginated responses by default, with parameters to tweak as needed.](https://pokeapi.co/docs/v2#resource-listspagination-section)
 
-### 2. Pokemon Details
+### 2. Pokémon Details
 
 Upon clicking view, a details pane should appear next to or below the list (depending on screen size) with the following details:
 
 - Name
-- Pokedex Number
+- Pokédex Number
 - Sprite (front view)
 - Height (in feet and inches)
 - Weight (in pounds)
-- Flavor text (Pokedex description, in English)
+- Flavor text (Pokédex description, in English)
 
 ### 3. My Team
 
-As a user, I would like to add Pokemon to my team (up to six Pokemon). This should be persisted across browser refresh and/or new tabs using a Pinia store.
+As a user, I would like to add Pokémon to my team (up to six Pokémon). This should be persisted across browser refresh and/or new tabs using a Pinia store.
 
 The My Team view should:
 
-- Allow the user to remove a pokemon from their team.
-- Allow the user to view details of a Pokemon in their team (same requirements as Pokemon Details).
+- Allow the user to remove a Pokémon from their team.
+- Allow the user to view details of a Pokémon in their team (same requirements as Pokémon Details).
 
 ## Design
 
 Due to their part-time job as a Gym Leader, the assigned designer for this application was not able to finish a proper Figma mock-up in time. _You’ll have to improvise!_
 
-Project Manager Oak has requested we build the UI to be reminiscent of the Pokedex designs as represented in the Pokemon HeartGold/SoulSilver Version games for Nintendo DS. As the application is not built for a handheld, some artistic license can be taken with the design, as long as it's presentable.
+Project Manager Oak has requested we build the UI to be reminiscent of the Pokédex designs as represented in the Pokémon HeartGold/SoulSilver Version games for Nintendo DS. As the application is not built for a handheld, some artistic license can be taken with the design, as long as it's presentable.
 
 Please note: the layout should be mobile-responsive. You can’t replace a portable device with a desktop-only application!
 
@@ -74,24 +74,24 @@ Please note: the layout should be mobile-responsive. You can’t replace a porta
 
 These tasks are not required as part of your submission. You can complete as many or as few as you'd like!
 
-### Pokemon Sprite in List View
+### Pokémon Sprite in List View
 
-Add a column on the left-hand side that displays the “mini” in-game sprite for each Pokemon in the table view (see the “My Team” design reference for an example).
+Add a column on the left-hand side that displays the “mini” in-game sprite for each Pokémon in the table view (see the “My Team” design reference for an example).
 
 ### Search and Filters
 
-A search bar should be implemented on the list view, which allows a user to search Pokemon by (at least) name and/or other attributes.
+A search bar should be implemented on the list view, which allows a user to search Pokémon by (at least) name and/or other attributes.
 
-Filters should be also implemented on the list view (presumably alongside search), allowing a user to filter Pokemon by:
+Filters should be also implemented on the list view (presumably alongside search), allowing a user to filter Pokémon by:
 
 - Type
 - Weight
 - Height
 - [Generation](https://bulbapedia.bulbagarden.net/wiki/Generation)
 
-### Pokemon Team Reorder
+### Pokémon Team Reorder
 
-A user should be able to re-order pokemon in their team using a drag-and-drop interface. This order should be persisted across browser reloads.
+A user should be able to re-order Pokémon in their team using a drag-and-drop interface. This order should be persisted across browser reloads.
 
 ## Tech Stack
 
@@ -104,7 +104,7 @@ Revolve Labs primarily uses Vue.js 3 for front-end web applications, and a boile
 - [Playwright](https://playwright.dev/) for e2e tests.
 - [Element Plus](https://element-plus.org/en-US/), a UI component library for Vue.js 3.
   - This is pre-configured to allow you to focus on application logic–we use E+ here at RL. If you want to use a different component library (or roll-your-own), that’s fine too–just be aware this will extend the scope of the challenge.
-- A custom font, “[Pokemon DP Pro](https://fontstruct.com/fontstructions/show/404271/pok_mon_dp_pro)”, which is reminiscent of the original font from Pokemon Diamond/Pearl/Platinum Versions for the Nintendo DS.
+- A custom font, “[Pokémon DP Pro](https://fontstruct.com/fontstructions/show/404271/pok_mon_dp_pro)”, which is reminiscent of the original font from Pokémon Diamond/Pearl/Platinum Versions for the Nintendo DS.
 
 You are allowed to use as many libraries, custom components, and as much custom CSS as necessary–[Tailwind CSS](https://tailwindcss.com/) is also installed for your convenience. However, it’s understandable and acceptable if you want to use scoped styles, CSS-in-JS, or similar (which may be necessary due to limitations with Element Plus).
 
