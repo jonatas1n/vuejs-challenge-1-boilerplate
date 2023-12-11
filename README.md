@@ -174,4 +174,4 @@ npm run lint
 
 ---
 
-### For legal information, please see DISCLAIMER.md
+### For legal information, please see [DISCLAIMER.md](DISCLAIMER.md)
