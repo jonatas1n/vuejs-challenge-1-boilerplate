@@ -58,6 +58,18 @@ Project Manager Oak has requested we build the UI to be reminiscent of the Poked
 
 Please note: the layout should be mobile-responsive. You can’t replace a portable device with a desktop-only application!
 
+### List View
+
+![List View](meta/img/list.png)
+
+### Details View
+
+![Details View](meta/img/details.png)
+
+### My Team View
+
+![List View](meta/img/team.png)
+
 ## Bonus
 
 These tasks are not required as part of your submission. You can complete as many or as few as you'd like!
@@ -175,5 +187,4 @@ npm run lint
 ```
 
 ---
-
-### For legal information, please see [DISCLAIMER.md](DISCLAIMER.md)
+For legal information, please see [DISCLAIMER.md](DISCLAIMER.md)
