@@ -96,13 +96,11 @@ You are allowed to use as many libraries, custom components, and as much custom 
 
 ## Instructions
 
-Fork the repository from the GitHub repo linked in this document.
-
-1. Add <https://github.com/em1382> as a collaborator to your forked repository.
-2. Create your solution based on the requirements. Be as creative as you’d like! You’ll be judged based on visual style in addition to code quality.
-3. Write applicable e2e and unit tests (if you run out of time, just focus on testing core business logic–100% coverage isn’t make or break). If you’re more comfortable with using other frameworks (e.g. Cypress for e2e and Jest for unit testing) you’re welcome to swap out the installed frameworks.
-
-4. Submit by requesting a review on your final PR from <https://github.com/em1382>.
+1. Fork this repository (your fork should be private).
+2. Add <https://github.com/em1382> as a collaborator to your forked repository.
+3. Create your solution based on the requirements. Be as creative as you’d like! You’ll be judged based on visual style in addition to code quality.
+4. Write applicable e2e and unit tests (if you run out of time, just focus on testing core business logic–100% coverage isn’t make or break). If you’re more comfortable with using other frameworks (e.g. Cypress for e2e and Jest for unit testing) you’re welcome to swap out the installed frameworks.
+5. Submit by requesting a review on your final PR from <https://github.com/em1382>.
 
 You have a time limit of three days. As it’s understood that time zones vary by candidate, your submission will be due 72 hours from 9am on November 12th in your local time zone.
 
