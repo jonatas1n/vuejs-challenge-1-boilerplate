@@ -6,7 +6,7 @@ _A Vue.js 3-driven Pokedex for the web!_
 
 Oak (your part-time project manager) has tasked you with building a proof-of-concept user interface for an upcoming web application to replace the original physical [Pokedex family of devices](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex).
 
-As nobody wants to carry around hand-held devices in the current year for the sole purpose of cataloging Pokemon, your task is to build a web-based example application to replicate some of the functionality of the original hand-held devices.
+With the prevalence of smartphones in the current year, no one wants to carry around hand-held devices for the sole purpose of cataloging Pokemon. Your task is to build a web-based example application to replicate some of the functionality of the original hand-held devices.
 
 ## Requirements
 
@@ -116,7 +116,7 @@ You are allowed to use as many libraries, custom components, and as much custom 
 4. Write applicable e2e and unit tests (if you run out of time, just focus on testing core business logic–100% coverage isn’t make or break). If you’re more comfortable with using other frameworks (e.g. Cypress for e2e and Jest for unit testing) you’re welcome to swap out the installed frameworks.
 5. Submit by requesting a review on your final PR from <https://github.com/em1382>.
 
-You have a time limit of three days. As it’s understood that time zones vary by candidate, your submission will be due 72 hours from 9am on November 12th in your local time zone.
+This challenge has a time limit of three days (72 hours). As it’s understood that time zones vary by candidate, your submission will be due 72 hours from 9am in your local time zone on the day after you receive this document.
 
 ## Recommended IDE Setup
 
