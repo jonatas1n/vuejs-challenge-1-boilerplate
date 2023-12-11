@@ -2,9 +2,9 @@
 
 ## Overview
 
-Oak (your part-time project manager) has tasked you with building a proof-of-concept user interface for an upcoming web application to replace the original physical Pokedex family of devices.
+Oak (your part-time project manager) has tasked you with building a proof-of-concept user interface for an upcoming web application to replace the original physical [Pokedex family of devices](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex).
 
-As nobody wants to carry around hand-held devices for the sole purpose of cataloging Pokemon in the current year, your task is to build out a web-based example application to replicate some of the functionality of the original hand-held devices.
+As nobody wants to carry around hand-held devices in the current year for the sole purpose of cataloging Pokemon, your task is to build a web-based example application to replicate some of the functionality of the original hand-held devices.
 
 ## Requirements
 
@@ -92,7 +92,7 @@ Revolve Labs primarily uses Vue.js 3 for front-end web applications, and a boile
   - This is pre-configured to allow you to focus on application logic–we use E+ here at RL. If you want to use a different component library (or roll-your-own), that’s fine too–just be aware this will extend the scope of the challenge.
 - A custom font, “[Pokemon DP Pro](https://fontstruct.com/fontstructions/show/404271/pok_mon_dp_pro)”, which is reminiscent of the original font from Pokemon Diamond/Pearl/Platinum Versions for the Nintendo DS.
 
-You are allowed to use as many libraries, custom components, and as much custom CSS as necessary–Tailwind CSS is also installed for your convenience. However, it’s understandable and acceptable if you want to use scoped styles, CSS-in-JS, or similar (which may be necessary due to limitations with Element Plus).
+You are allowed to use as many libraries, custom components, and as much custom CSS as necessary–[Tailwind CSS](https://tailwindcss.com/) is also installed for your convenience. However, it’s understandable and acceptable if you want to use scoped styles, CSS-in-JS, or similar (which may be necessary due to limitations with Element Plus).
 
 ## Instructions
 
