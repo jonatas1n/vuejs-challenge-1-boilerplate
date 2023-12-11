@@ -1,5 +1,7 @@
 # Vue.js 3 Coding Challenge #1: Pokedex
 
+_A Vue.js 3-driven Pokedex for the web!_
+
 ## Overview
 
 Oak (your part-time project manager) has tasked you with building a proof-of-concept user interface for an upcoming web application to replace the original physical [Pokedex family of devices](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex).
