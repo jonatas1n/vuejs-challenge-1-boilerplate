@@ -2,7 +2,9 @@
 
 ## Overview
 
-Oak (your part-time project manager) has tasked you with building a proof-of-concept user interface for an upcoming web application to replace the original physical Pokedex family of devices. As no one wants to carry around hand-held devices for the sole purpose of cataloging Pokemon in the current year, your task is to build out a web-based example application to replicate some of the functionality of the original hand-held devices.
+Oak (your part-time project manager) has tasked you with building a proof-of-concept user interface for an upcoming web application to replace the original physical Pokedex family of devices.
+
+As nobody wants to carry around hand-held devices for the sole purpose of cataloging Pokemon in the current year, your task is to build out a web-based example application to replicate some of the functionality of the original hand-held devices.
 
 ## Requirements
 
