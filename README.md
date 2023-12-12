@@ -8,7 +8,7 @@ Oak (your part-time project manager from the world of [Pokémon](https://en.wiki
 
 Some individuals (like Oak, a [Pokémon Professor](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Professor) when not managing software projects) would rather study Pokémon, which is how the [Pokédex](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex) portable Pokémon database got its start. While on their adventure, trainers are able to catch new Pokémon in a device called a [Poké Ball](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9_Ball). Upon first capture of a unique Pokémon, that Pokémon’s entry and associated data are added to the trainer’s Pokédex. The ultimate goal is to “catch ‘em all!”
 
-However, the original goal of “catching 'em all” has been long-completed, and, with the prevalence of smartphones in the current year, no one wants to carry around an additional hand-held device used for the sole purpose of looking up Pokémon. Your task is to build a web-based example application to replicate some of the read-only functionality of the original hand-held devices for web (including mobile) using the latest complete version of the Pokémon database.
+However, the original goal of “catching 'em all” has been long-completed, and, with the prevalence of smartphones in the current year, no one wants to carry around an additional hand-held device with the sole purpose of looking up Pokémon. Your task is to build a web-based example application to replicate some of the read-only functionality of the original hand-held devices for web (including mobile) using the latest complete version of the Pokémon database.
 
 ## Requirements
 
