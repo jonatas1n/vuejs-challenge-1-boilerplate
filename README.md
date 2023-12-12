@@ -104,8 +104,12 @@ Revolve Labs primarily uses Vue.js 3 for front-end web applications, and a boile
 - [VueUse](https://vueuse.org/), a utility library for Vue.js 3.
 - [Vitest](https://vitest.dev/) for unit tests.
 - [Playwright](https://playwright.dev/) for e2e tests.
+- [ESLint](https://eslint.org/) for linting.
+- [Prettier](https://prettier.io/) for formatting.
 - [Element Plus](https://element-plus.org/en-US/), a UI component library for Vue.js 3.
-  - This is pre-configured to allow you to focus on application logic–we use E+ here at RL. If you want to use a different component library (or roll-your-own), that’s fine too–just be aware this will extend the scope of the challenge.
+  - This is pre-configured with features such as [on-demand import](https://element-plus.org/en-US/guide/quickstart.html#on-demand-import) to allow you to focus on application logic–we use E+ here at RL. If you want to use a different component library (or roll-your-own), that’s fine too–just be aware this will extend the scope of the challenge.
+  - If you want to use Nuxt, you’ll need to do some [reconfiguration](https://element-plus.org/en-US/guide/quickstart.html#nuxt).
+- A .vscode folder containing an [extensions.json](https://github.com/Bit49-LLC/vuejs-challenge-1-boilerplate/blob/main/.vscode/extensions.json) for use with [VSCode](https://code.visualstudio.com/).
 - A custom font, “[Pokémon DP Pro](https://fontstruct.com/fontstructions/show/404271/pok_mon_dp_pro)”, which is reminiscent of the original font from Pokémon Diamond/Pearl/Platinum Versions for the Nintendo DS.
 
 You are allowed to use as many libraries, custom components, and as much custom CSS as necessary–[Tailwind CSS](https://tailwindcss.com/) is also installed for your convenience. However, it’s understandable and acceptable if you want to use scoped styles, CSS-in-JS, or similar (which may be necessary due to limitations with Element Plus).
