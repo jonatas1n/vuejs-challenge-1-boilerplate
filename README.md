@@ -118,7 +118,7 @@ You are allowed to use as many libraries, custom components, and as much custom 
 4. Write applicable e2e and unit tests (if you run out of time, just focus on testing core business logic–100% coverage isn’t make or break). If you’re more comfortable with using other frameworks (e.g. Cypress for e2e and Jest for unit testing) you’re welcome to swap out the installed frameworks.
 5. Submit by requesting a review on your final PR from <https://github.com/em1382>.
 
-This challenge has a time limit of three days (72 hours). As it’s understood that time zones vary by candidate, your submission will be due 72 hours from 9am in your local time zone on the day after you receive this document.
+This challenge has a time limit of three days (roughly 72 hours). As it’s understood that time zones vary by candidate, your submission will be due 72 hours from 7pm in your local time zone on the day after you receive this document.
 
 ## Recommended IDE Setup
 
