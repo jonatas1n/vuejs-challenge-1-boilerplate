@@ -4,9 +4,11 @@ _A Vue.js 3-driven Pokédex for the web!_
 
 ## Overview
 
-Oak (your part-time project manager) has tasked you with building a proof-of-concept user interface for an upcoming web application to replace the original physical [Pokédex family of devices](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex).
+Oak (your part-time project manager from the world of [Pokémon](https://en.wikipedia.org/wiki/Pok%C3%A9mon)) has tasked you with building a proof-of-concept user interface for an upcoming web application to help out with his research. The world of Pokémon is inhabited by creatures of the same name–which can be collected, trained, and battled with other Pokémon by individuals known as [Pokémon Trainers](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Trainer).
 
-With the prevalence of smartphones in the current year, no one wants to carry around hand-held devices for the sole purpose of cataloging Pokémon. Your task is to build a web-based example application to replicate some of the functionality of the original hand-held devices.
+Some individuals (like Oak, a [Pokémon Professor](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Professor) when not managing software projects) would rather study Pokémon, which is how the [Pokédex](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex) portable Pokémon database got its start. While on their adventure, trainers are able to catch new Pokémon in a device called a [Poké Ball](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9_Ball). Upon first capture of a unique Pokémon, that Pokémon’s entry and associated data are added to the trainer’s Pokédex. The ultimate goal is to “catch ‘em all!”
+
+However, the original goal of “catching them all” has been long-completed, and, with the prevalence of smartphones in the current year, no one wants to carry around an additional hand-held device used for the sole purpose of looking up Pokémon. Your task is to build a web-based example application to replicate some of the read-only functionality of the original hand-held devices for web (including mobile) using the latest complete version of the Pokémon database.
 
 ## Requirements
 
