@@ -12,7 +12,7 @@ However, the original goal of “catching 'em all” has been long-completed, an
 
 ## Requirements
 
-The data source should be <https://pokeapi.co/>, a free and open source read-only REST API that provides all of the data needed to complete this challenge. No authentication/authorization required!
+The data source should be <https://pokeapi.co/>, a free and open source read-only REST API that provides all of the data and images needed to complete this challenge. No authentication/authorization required!
 
 ### 1. Pokémon List
 
