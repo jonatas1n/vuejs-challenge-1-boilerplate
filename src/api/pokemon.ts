@@ -18,11 +18,13 @@ export default {
     return { results, count, offset, offsetNext, offsetPrev };
   },
 
-  fetchPokemonDetails(id: stringOrNumber) {
-    return apiClient.get(`pokemon/${id}`);
+  async fetchPokemonDetails(id: stringOrNumber) {
+    const response = await apiClient.get(`pokemon/${id}`);
+    return response.data;
   },
 
-  fetchPokemonSpecies(id: number) {
-    return apiClient.get(`pokemon-species/${id}`);
+  async fetchPokemonSpecies(id: stringOrNumber) {
+    const response = await apiClient.get(`pokemon-species/${id}`);
+    return response.data;
   }
 }
