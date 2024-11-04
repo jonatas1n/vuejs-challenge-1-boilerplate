@@ -1,4 +1,5 @@
 import PokemonListVue from '@/views/PokemonList.vue'
+import PokemonDetailsVue from '@/views/PokemonDetails.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -15,6 +16,11 @@ const router = createRouter({
       path: '/pokedex',
       name: 'pokedex',
       component: PokemonListVue
+    },
+    {
+      path: '/pokedex/:id',
+      name: 'pokemon-details',
+      component: PokemonDetailsVue
     }
   ]
 })

@@ -15,6 +15,12 @@ declare module 'vue' {
     ElPagination: (typeof import('element-plus/es'))['ElPagination']
     ElTableV2: (typeof import('element-plus/es'))['ElTableV2']
     ElTag: (typeof import('element-plus/es'))['ElTag']
+    List: typeof import('./src/components/List.vue')['default']
+    ListContainer: typeof import('./src/components/ListContainer.vue')['default']
+    ListItem: typeof import('./src/components/ListItem.vue')['default']
+    Pagination: typeof import('./src/components/Pagination.vue')['default']
+    PaginationSection: typeof import('./src/components/PaginationSection.vue')['default']
+    PokemonListItem: typeof import('./src/components/PokemonListItem.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
