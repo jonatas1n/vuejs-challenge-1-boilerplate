@@ -1,13 +1,11 @@
 <template>
   <li @click="handleClick" :class="{ selected: selected }">
-    {{pokemonId }} - {{ pokemon.name }}
+    {{ pokemonId }} - {{ pokemon.name }}
   </li>
 </template>
 
 <script setup>
-  import { defineProps, defineEmits } from 'vue';
-
-  const props = defineProps({
+  defineProps({
     pokemon: {
       type: Object,
       required: true,
@@ -21,11 +19,4 @@
       default: false,
     }
   });
-
-  const emit = defineEmits(['selectPokemon']);
-
-  const handleClick = () => {
-    emit('selectPokemon', props.pokemonId);
-  }
-
 </script>

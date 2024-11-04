@@ -1,12 +1,6 @@
 <template>
-  <!-- <div :if="state.selectedPokemon">
-    <img :src="state.selectedPokemon.sprites?.front_default" alt="Pokemon" />
-    <h1>{{ state.selectedPokemon.id }} - {{ state.selectedPokemon.name }}</h1>
-    <h2>Height: {{ state.selectedPokemon.height }}</h2>
-    <h2>Weight: {{ state.selectedPokemon.weight }}</h2>
-    <p>{{ state.flavorText }}</p>
-  </div> -->
-  <ListContainer :pokemons="state.pokemons" :offset="state.offset" />
+  <PokemonDisplay :v-if="!!state.selectedPokemon" :pokemon="state.selectedPokemon" />
+  <ListContainer @selectPokemon="handleSelectPokemon" :pokemons="state.pokemons" :offset="state.offset" />
   <div>
     <button @click="state.prev()" :disabled="state.offset === 0">Previous</button>
     <button @click="state.next()">Next</button>
@@ -17,8 +11,9 @@
   import { reactive, onMounted } from 'vue';
   import pokemonApi from '@/api/pokemon';
   import ListContainer from '@/components/ListContainer.vue';
+  import PokemonDisplay from '@/components/PokemonDisplay.vue';
 
-  const { fetchPokemons } = pokemonApi;
+  const { fetchPokemons, fetchPokemonDetails, fetchPokemonSpecies } = pokemonApi;
   
   const state = reactive({
     pokemons: [],
@@ -38,6 +33,15 @@
     state.prev = () => getPokemons(offsetPrev),
     state.next = () => getPokemons(offsetNext),
     state.pokemons = results;
+  };
+
+  const handleSelectPokemon = async (pokemonName) => {
+    const pokemonDetails = await fetchPokemonDetails(pokemonName);
+    const pokemonSpecies = await fetchPokemonSpecies(pokemonName);
+    const enFlavorText = pokemonSpecies.flavor_text_entries.find(entry => entry.language.name === 'en');
+    pokemonDetails.flavorText = enFlavorText.flavor_text;
+    console.log(pokemonDetails);
+    state.selectedPokemon = pokemonDetails;
   };
 
   onMounted(() => getPokemons());

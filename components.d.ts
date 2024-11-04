@@ -20,6 +20,7 @@ declare module 'vue' {
     ListItem: typeof import('./src/components/ListItem.vue')['default']
     Pagination: typeof import('./src/components/Pagination.vue')['default']
     PaginationSection: typeof import('./src/components/PaginationSection.vue')['default']
+    PokemonDisplay: typeof import('./src/components/PokemonDisplay.vue')['default']
     PokemonListItem: typeof import('./src/components/PokemonListItem.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
