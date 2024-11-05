@@ -25,5 +25,6 @@ declare module 'vue' {
     PokemonListItem: typeof import('./src/components/PokemonListItem.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    RowItem: typeof import('./src/components/RowItem.vue')['default']
   }
 }

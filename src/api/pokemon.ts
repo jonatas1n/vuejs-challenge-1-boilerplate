@@ -1,6 +1,5 @@
 import axios from 'axios';
-
-type stringOrNumber = string | number;
+import type { stringOrNumber } from '@/types';
 
 const apiClient = axios.create({
   baseURL: 'https://pokeapi.co/api/v2/',

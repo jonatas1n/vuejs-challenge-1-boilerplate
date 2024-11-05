@@ -1,34 +1,46 @@
 <template>
-  <img :src="state.pokemon.sprites?.front_default" alt="Pokemon" />
-  <h1>{{ state.pokemon.id }} - {{ state.pokemon.name }}</h1>
-  <h2>Height: {{ state.pokemon.height }}</h2>
-  <h2>Weight: {{ state.pokemon.weight }}</h2>
-  <p>{{ state.flavorText }}</p>
+  <RouterLink :to="{name: 'pokedex'}">Back to List</RouterLink>
+  <div v-if="pokedexStore.selectedPokemon">
+    <img v-if="state.selectedSprite" :src="state.selectedSprite" alt="Pokemon" />
+    <h1>{{ pokedexStore.selectedPokemon.id }} - {{ pokedexStore.selectedPokemon.name }}</h1>
+    <h2>Height: {{ pokedexStore.selectedPokemon.height }}</h2>
+    <h2>Weight: {{ pokedexStore.selectedPokemon.weight }}</h2>
+    <p>{{ state.flavorText }}</p>
+  </div>
 </template>
 
 <script setup>
-import { onMounted, reactive } from 'vue'
-import { useRoute } from 'vue-router'
-import pokemonApi from '@/api/pokemon'
+  import { onMounted, reactive } from 'vue';
+  import { RouterLink, useRoute } from 'vue-router';
+  import { usePokedexStore } from '@/store/usePokedexStore';
 
-const { fetchPokemonDetails, fetchPokemonSpecies } = pokemonApi
+  const pokedexStore = usePokedexStore();
+  const route = useRoute();
 
-const route = useRoute()
+  const state = reactive({
+    selectedSprite: '',
+    sprites: [],
+  });
 
-const state = reactive({
-  pokemon: {},
-  flavorText: ''
-})
+  const spritesInterval = () => {
+    let index = 0
+    setInterval(() => {
+      state.selectedSprite = state.sprites[index]
+      index = (index + 1) % state.sprites.length
+    }, 1500);
+  }
 
-onMounted(() => {
-  const pokemonId = route.params.id
-  fetchPokemonDetails(pokemonId).then((response) => {
-    state.pokemon = response.data
+  const setSprites = async () => {
+    const sprites = Object.values(pokedexStore.selectedPokemon.sprites);
+    state.selectedSprite = sprites[0];
+    state.sprites = sprites.filter(sprite => sprite && typeof sprite === 'string');
+    spritesInterval();
+  }
+
+  onMounted(async () => {
+    const { id: pokemonId } = route.params;
+    await pokedexStore.fetchPokemonDetails(pokemonId);
+    setSprites();
   })
-  fetchPokemonSpecies(pokemonId).then(response => {
-    const flavorTextEntries = response.data.flavor_text_entries
-    const englishFlavorText = flavorTextEntries.find(entry => entry.language.name === 'en')
-    state.flavorText = englishFlavorText.flavor_text
-  })
-})
+
 </script>
