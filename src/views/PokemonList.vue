@@ -1,10 +1,7 @@
 <template>
-  <PokemonDisplay :v-if="!!state.selectedPokemon" :pokemon="state.selectedPokemon" />
+  <PokemonDisplay v-if="state.selectedPokemon" :pokemon="state.selectedPokemon" />
   <ListContainer @selectPokemon="handleSelectPokemon" :pokemons="state.pokemons" :offset="state.offset" />
-  <div>
-    <button @click="state.prev()" :disabled="state.offset === 0">Previous</button>
-    <button @click="state.next()">Next</button>
-  </div>
+  <ListPagination :next="state.next" :prev="state.prev" :offset="state.offset"/>
 </template>
 
 <script setup lang="ts">
@@ -12,6 +9,7 @@
   import pokemonApi from '@/api/pokemon';
   import ListContainer from '@/components/ListContainer.vue';
   import PokemonDisplay from '@/components/PokemonDisplay.vue';
+  import ListPagination from '@/components/ListPagination.vue';
 
   const { fetchPokemons, fetchPokemonDetails, fetchPokemonSpecies } = pokemonApi;
   
@@ -36,11 +34,12 @@
   };
 
   const handleSelectPokemon = async (pokemonName) => {
+    if (!pokemonName || state.selectedPokemon?.name === pokemonName) return;
+
     const pokemonDetails = await fetchPokemonDetails(pokemonName);
     const pokemonSpecies = await fetchPokemonSpecies(pokemonName);
     const enFlavorText = pokemonSpecies.flavor_text_entries.find(entry => entry.language.name === 'en');
     pokemonDetails.flavorText = enFlavorText.flavor_text;
-    console.log(pokemonDetails);
     state.selectedPokemon = pokemonDetails;
   };
 

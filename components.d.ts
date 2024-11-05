@@ -18,6 +18,7 @@ declare module 'vue' {
     List: typeof import('./src/components/List.vue')['default']
     ListContainer: typeof import('./src/components/ListContainer.vue')['default']
     ListItem: typeof import('./src/components/ListItem.vue')['default']
+    ListPagination: typeof import('./src/components/ListPagination.vue')['default']
     Pagination: typeof import('./src/components/Pagination.vue')['default']
     PaginationSection: typeof import('./src/components/PaginationSection.vue')['default']
     PokemonDisplay: typeof import('./src/components/PokemonDisplay.vue')['default']
