@@ -1,17 +1,18 @@
 <template>
-  <li @click="handleClick" :class="{ selected: selected }">
-    {{ pokemonId }} - {{ pokemon.name }}
-  </li>
+  <tr @click="handleClick" :class="{ selected: selected }">
+    <td>{{ pokemonId }}</td>
+    <td>{{ pokemon?.name }}</td>
+  </tr>
 </template>
 
 <script setup>
   defineProps({
-    pokemon: {
-      type: Object,
-      required: true,
-    },
     pokemonId: {
       type: Number,
+      required: true,
+    },
+    pokemon: {
+      type: Object,
       required: true,
     },
     selected: {
@@ -19,4 +20,5 @@
       default: false,
     }
   });
+
 </script>

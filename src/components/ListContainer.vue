@@ -1,19 +1,27 @@
 <template>
-  <ul>
-    <ListItem
-      v-for="(pokemon, index) in props.pokemons"
-      @click="handleClick(pokemon.name)"
-      :key="pokemon.name"
-      :pokemon="pokemon"
-      :pokemonId="index + props.offset + 1"
-    />
-  </ul>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <RowItem
+        v-for="(pokemon, index) in pokemons"
+        @click="handleClick(pokemon.name)"
+        :key="pokemon.name"
+        :pokemon="pokemon"
+        :pokemonId="index + offset + 1"
+      />
+    </tbody>
+  </table>
 </template>
 
 <script setup>
-  import ListItem from '@/components/ListItem.vue';
+  import RowItem from '@/components/RowItem.vue';
 
-  const props = defineProps({
+  defineProps({
     pokemons: {
       type: Array,
       required: true,
